@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inquiries &amp; Appointments — The Prestige Couture</title>
+<meta name="description" content="Request a private appointment at The Prestige Couture atelier in Paris, or send a general or press inquiry.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,500&family=Jost:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="selvage" aria-hidden="true"><span>THE PRESTIGE COUTURE&nbsp;·&nbsp;ATELIER MCMXCII&nbsp;·&nbsp;PARIS&nbsp;·&nbsp;THE PRESTIGE COUTURE&nbsp;·&nbsp;ATELIER MCMXCII&nbsp;·&nbsp;PARIS&nbsp;·&nbsp;</span></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">PC</span>
+      <span class="brand-name">The Prestige<br>Couture</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <ul class="nav-list" id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="showcase.html">Product Showcase</a></li>
+        <li><a href="trustees.html">Board of Trustees</a></li>
+        <li><a href="inquiries.html">Inquiries &amp; Appointments</a></li>
+        <li><a href="events.html">Upcoming Events</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="press-ticker" aria-label="House press wire">
+    <div class="ticker-track" id="tickerTrack">
+      <span>RESORT 2027 SILHOUETTES UNVEILED AT THE ATELIER&nbsp;&nbsp;—&nbsp;&nbsp;"ÉDITION NOIRE" NAMES THE HOUSE STUDIO OF THE YEAR&nbsp;&nbsp;—&nbsp;&nbsp;BESPOKE BRIDAL CALENDAR NOW OPEN FOR AUTUMN&nbsp;&nbsp;—&nbsp;&nbsp;THE LEDGER: SUSTAINABLE SILK PROGRAMME ENTERS YEAR THREE&nbsp;&nbsp;—&nbsp;&nbsp;PRIVATE VIEWINGS BY APPOINTMENT ONLY&nbsp;&nbsp;—&nbsp;&nbsp;</span>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section tight">
+    <p class="eyebrow">Inquiries &amp; Appointments</p>
+    <h1 style="font-size:clamp(2rem,4vw,3rem); max-width:680px;">Request a private appointment</h1>
+    <p style="max-width:600px; margin-top:14px;">Appointments run Tuesday through Saturday. Choose a date below and the available sitting times will load automatically once the atelier's schedule for that day has been checked.</p>
+  </section>
+
+  <section class="section tight inquiry-layout">
+    <div>
+      <div class="info-card">
+        <h3>Atelier hours</h3>
+        <p class="hours"><span>Tuesday – Friday</span><span>10:00 – 18:00</span></p>
+        <p class="hours"><span>Saturday</span><span>10:00 – 16:00</span></p>
+        <p class="hours"><span>Sunday &amp; Monday</span><span>Closed</span></p>
+      </div>
+      <div class="info-card" style="margin-top:24px;">
+        <h3>Before you write</h3>
+        <p>First sittings run 45 minutes and are unhurried — there's no obligation to commission anything. Bridal consultations are best booked at least four months ahead of the date.</p>
+      </div>
+    </div>
+
+    <form class="form-card" id="appointmentForm" novalidate>
+      <div class="form-row">
+        <div class="field">
+          <label for="fullName">Full name</label>
+          <input type="text" id="fullName" name="fullName" required autocomplete="name">
+          <span class="error-text" id="err-fullName"></span>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+          <span class="error-text" id="err-email"></span>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="phone">Phone (optional)</label>
+          <input type="tel" id="phone" name="phone" placeholder="e.g. +33 1 23 45 67 89" autocomplete="tel">
+          <span class="error-text" id="err-phone"></span>
+        </div>
+        <div class="field">
+          <label for="inquiryType">Inquiry type</label>
+          <select id="inquiryType" name="inquiryType" required>
+            <option value="" disabled selected>Choose one</option>
+            <option value="Private Fitting Consultation">Private Fitting Consultation</option>
+            <option value="Bridal Consultation">Bridal Consultation</option>
+            <option value="Press Inquiry">Press Inquiry</option>
+            <option value="General Inquiry">General Inquiry</option>
+          </select>
+          <span class="error-text" id="err-inquiryType"></span>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="prefDate">Preferred date</label>
+          <input type="date" id="prefDate" name="prefDate" required>
+          <span class="error-text" id="err-prefDate"></span>
+        </div>
+        <div class="field">
+          <label for="prefTime">Preferred time</label>
+          <select id="prefTime" name="prefTime" required disabled>
+            <option value="" selected>Choose a date first</option>
+          </select>
+          <span class="error-text" id="err-prefTime"></span>
+        </div>
+      </div>
+      <p class="availability-note" id="availabilityNote"></p>
+
+      <div class="field">
+        <label for="message">Message (optional)</label>
+        <textarea id="message" name="message" maxlength="500" placeholder="Tell us a little about what you're looking for."></textarea>
+        <div class="field-meta"><span></span><span id="charCount">0 / 500</span></div>
+      </div>
+
+      <button class="btn btn-primary" type="submit">Request Appointment</button>
+
+      <div class="confirmation-panel" id="confirmationPanel" hidden>
+        <h3>Request received</h3>
+        <p>This is a front-end demonstration — no message has actually been sent. Here is what would be submitted:</p>
+        <dl>
+          <dt>Name</dt><dd id="confName"></dd>
+          <dt>Email</dt><dd id="confEmail"></dd>
+          <dt>Type</dt><dd id="confType"></dd>
+          <dt>Date</dt><dd id="confDate"></dd>
+          <dt>Time</dt><dd id="confTime"></dd>
+        </dl>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark">PC</span>
+      <p>The Prestige Couture<br>Maison de Haute Couture, Paris</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="showcase.html">Product Showcase</a>
+      <a href="trustees.html">Board of Trustees</a>
+      <a href="inquiries.html">Inquiries &amp; Appointments</a>
+      <a href="events.html">Upcoming Events</a>
+    </nav>
+    <div class="footer-structure">
+      <button class="dom-toggle" id="domToggle" type="button">View Page Structure (DOM)</button>
+    </div>
+  </div>
+  <div class="footer-base">
+    <p>&copy; <span id="year"></span> The Prestige Couture. All rights reserved.</p>
+  </div>
+</footer>
+
+<div class="dom-panel" id="domPanel" hidden>
+  <div class="dom-panel-inner">
+    <div class="dom-panel-head">
+      <h2>Document Object Model — page structure</h2>
+      <button class="dom-close" id="domClose" type="button" aria-label="Close">&times;</button>
+    </div>
+    <p class="dom-panel-note">Generated live by walking <code>document.body</code> in JavaScript — it reflects this page's real DOM, not a static diagram.</p>
+    <pre class="dom-tree" id="domTree"></pre>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/inquiries.js"></script>
+</body>
+</html>
