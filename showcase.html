@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product Showcase — The Prestige Couture</title>
+<meta name="description" content="Browse current pieces from The Prestige Couture across Eveningwear, Bridal, Ready-to-Wear and Accessories.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,500&family=Jost:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="selvage" aria-hidden="true"><span>THE PRESTIGE COUTURE&nbsp;·&nbsp;ATELIER MCMXCII&nbsp;·&nbsp;PARIS&nbsp;·&nbsp;THE PRESTIGE COUTURE&nbsp;·&nbsp;ATELIER MCMXCII&nbsp;·&nbsp;PARIS&nbsp;·&nbsp;</span></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">PC</span>
+      <span class="brand-name">The Prestige<br>Couture</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <ul class="nav-list" id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="showcase.html">Product Showcase</a></li>
+        <li><a href="trustees.html">Board of Trustees</a></li>
+        <li><a href="inquiries.html">Inquiries &amp; Appointments</a></li>
+        <li><a href="events.html">Upcoming Events</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="press-ticker" aria-label="House press wire">
+    <div class="ticker-track" id="tickerTrack">
+      <span>RESORT 2027 SILHOUETTES UNVEILED AT THE ATELIER&nbsp;&nbsp;—&nbsp;&nbsp;"ÉDITION NOIRE" NAMES THE HOUSE STUDIO OF THE YEAR&nbsp;&nbsp;—&nbsp;&nbsp;BESPOKE BRIDAL CALENDAR NOW OPEN FOR AUTUMN&nbsp;&nbsp;—&nbsp;&nbsp;THE LEDGER: SUSTAINABLE SILK PROGRAMME ENTERS YEAR THREE&nbsp;&nbsp;—&nbsp;&nbsp;PRIVATE VIEWINGS BY APPOINTMENT ONLY&nbsp;&nbsp;—&nbsp;&nbsp;</span>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section tight">
+    <p class="eyebrow">Product Showcase</p>
+    <h1 style="font-size:clamp(2rem,4vw,3rem); max-width:680px;">Current pieces from the atelier</h1>
+    <p style="max-width:600px; margin-top:14px;">Every piece below is made to order against your own measurements. Nothing shown is held in stock — "in the showcase" means in the current pattern book, ready to be cut for you.</p>
+  </section>
+
+  <section class="section tight">
+    <div class="filter-row" id="filterRow" role="group" aria-label="Filter by category">
+      <button class="filter-btn active" data-filter="all" type="button">All</button>
+      <button class="filter-btn" data-filter="eveningwear" type="button">Eveningwear</button>
+      <button class="filter-btn" data-filter="bridal" type="button">Bridal</button>
+      <button class="filter-btn" data-filter="rtw" type="button">Ready-to-Wear</button>
+      <button class="filter-btn" data-filter="accessories" type="button">Accessories</button>
+    </div>
+
+    <div class="garment-grid" id="garmentGrid">
+
+      <article class="garment-card" data-category="eveningwear" data-id="luneville-coat">
+        <figure><svg viewBox="0 0 140 180" aria-hidden="true"><path class="line-art" d="M40 20 h60 l8 30 q-38 16 -76 0 z"/><path class="line-art gold" d="M48 50 q22 12 44 0 l14 110 q-36 14 -72 0 z"/><path class="line-art" d="M70 50 v110" stroke-dasharray="2 4"/></svg></figure>
+        <div class="tag-row"><span class="tag">Eveningwear</span></div>
+        <h3>The Lunéville Coat</h3>
+        <p class="price-tag">Price on request</p>
+        <button class="view-btn" type="button" data-id="luneville-coat">View Details</button>
+      </article>
+
+      <article class="garment-card" data-category="eveningwear" data-id="nocturne-cape">
+        <figure><svg viewBox="0 0 140 180" aria-hidden="true"><path class="line-art" d="M70 18 q-34 6 -40 40 l-6 100 q46 18 92 0 l-6 -100 q-6 -34 -40 -40 z"/><path class="line-art gold" d="M40 60 q30 14 60 0"/></svg></figure>
+        <div class="tag-row"><span class="tag">Eveningwear</span></div>
+        <h3>Nocturne Cape</h3>
+        <p class="price-tag">Price on request</p>
+        <button class="view-btn" type="button" data-id="nocturne-cape">View Details</button>
+      </article>
+
+      <article class="garment-card" data-category="bridal" data-id="sittings-gown">
+        <figure><svg viewBox="0 0 140 180" aria-hidden="true"><path class="line-art" d="M70 14 q-30 0 -30 26 l30 18 30 -18 q0 -26 -30 -26 z"/><path class="line-art gold" d="M40 58 q30 16 60 0 l16 110 q-46 18 -92 0 z"/></svg></figure>
+        <div class="tag-row"><span class="tag">Bridal</span></div>
+        <h3>Sittings Gown</h3>
+        <p class="price-tag">Price on request</p>
+        <button class="view-btn" type="button" data-id="sittings-gown">View Details</button>
+      </article>
+
+      <article class="garment-card" data-category="bridal" data-id="veiled-aisle-gown">
+        <figure><svg viewBox="0 0 140 180" aria-hidden="true"><path class="line-art" d="M70 10 v18 M55 28 q15 -10 30 0" /><path class="line-art gold" d="M44 52 q26 14 52 0 l18 116 q-44 16 -88 0 z"/></svg></figure>
+        <div class="tag-row"><span class="tag">Bridal</span></div>
+        <h3>Veiled Aisle Gown</h3>
+        <p class="price-tag">Price on request</p>
+        <button class="view-btn" type="button" data-id="veiled-aisle-gown">View Details</button>
+      </article>
+
+      <article class="garment-card" data-category="rtw" data-id="archive-trench">
+        <figure><svg viewBox="0 0 140 180" aria-hidden="true"><path class="line-art" d="M36 30 l34 -14 34 14 -8 26 -26 -10 -26 10 z"/><path class="line-art gold" d="M38 56 h64 l6 110 h-76 z"/></svg></figure>
+        <div class="tag-row"><span class="tag">Ready-to-Wear</span></div>
+        <h3>Archive Trench, No. 0461</h3>
+        <p class="price-tag">Remade from a 1998 pattern</p>
+        <button class="view-btn" type="button" data-id="archive-trench">View Details</button>
+      </article>
+
+      <article class="garment-card" data-category="rtw" data-id="ledger-blazer">
+        <figure><svg viewBox="0 0 140 180" aria-hidden="true"><path class="line-art" d="M40 28 l30 -14 30 14 -6 24 q-24 -8 -48 0 z"/><path class="line-art gold" d="M40 52 v100 M100 52 v100"/></svg></figure>
+        <div class="tag-row"><span class="tag">Ready-to-Wear</span></div>
+        <h3>Ledger Blazer</h3>
+        <p class="price-tag">Price on request</p>
+        <button class="view-btn" type="button" data-id="ledger-blazer">View Details</button>
+      </article>
+
+      <article class="garment-card" data-category="accessories" data-id="selvage-clutch">
+        <figure><svg viewBox="0 0 140 180" aria-hidden="true"><rect class="line-art" x="34" y="70" width="72" height="48" rx="4"/><path class="line-art gold" d="M48 70 q22 -20 44 0"/></svg></figure>
+        <div class="tag-row"><span class="tag">Accessories</span></div>
+        <h3>Selvage Clutch</h3>
+        <p class="price-tag">Price on request</p>
+        <button class="view-btn" type="button" data-id="selvage-clutch">View Details</button>
+      </article>
+
+      <article class="garment-card" data-category="accessories" data-id="pattern-pin-brooch">
+        <figure><svg viewBox="0 0 140 180" aria-hidden="true"><circle class="line-art gold" cx="70" cy="90" r="26"/><circle class="line-art" cx="70" cy="90" r="10"/></svg></figure>
+        <div class="tag-row"><span class="tag">Accessories</span></div>
+        <h3>Pattern-Pin Brooch</h3>
+        <p class="price-tag">Price on request</p>
+        <button class="view-btn" type="button" data-id="pattern-pin-brooch">View Details</button>
+      </article>
+
+      <article class="garment-card" data-category="accessories" data-id="atelier-scarf">
+        <figure><svg viewBox="0 0 140 180" aria-hidden="true"><rect class="line-art" x="30" y="76" width="80" height="28"/><path class="line-art gold" d="M30 90 h80" stroke-dasharray="2 4"/></svg></figure>
+        <div class="tag-row"><span class="tag">Accessories</span></div>
+        <h3>Atelier Scarf, No. 12</h3>
+        <p class="price-tag">Price on request</p>
+        <button class="view-btn" type="button" data-id="atelier-scarf">View Details</button>
+      </article>
+
+    </div>
+    <p id="emptyState" hidden style="font-family:var(--mono); font-size:0.85rem; margin-top:30px;">No pieces in this category yet — check back, or browse another filter.</p>
+  </section>
+</main>
+
+<div class="modal-overlay" id="modalOverlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" type="button" aria-label="Close details">&times;</button>
+    <p class="eyebrow" id="modalCategory"></p>
+    <h3 id="modalTitle"></h3>
+    <dl>
+      <dt>Fabric</dt><dd id="modalFabric"></dd>
+      <dt>Silhouette</dt><dd id="modalSilhouette"></dd>
+      <dt>Lead time</dt><dd id="modalLeadTime"></dd>
+      <dt>Notes</dt><dd id="modalNotes"></dd>
+    </dl>
+    <a class="btn btn-primary" style="margin-top:24px;" href="inquiries.html">Request an Appointment</a>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark">PC</span>
+      <p>The Prestige Couture<br>Maison de Haute Couture, Paris</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="showcase.html">Product Showcase</a>
+      <a href="trustees.html">Board of Trustees</a>
+      <a href="inquiries.html">Inquiries &amp; Appointments</a>
+      <a href="events.html">Upcoming Events</a>
+    </nav>
+    <div class="footer-structure">
+      <button class="dom-toggle" id="domToggle" type="button">View Page Structure (DOM)</button>
+    </div>
+  </div>
+  <div class="footer-base">
+    <p>&copy; <span id="year"></span> The Prestige Couture. All rights reserved.</p>
+  </div>
+</footer>
+
+<div class="dom-panel" id="domPanel" hidden>
+  <div class="dom-panel-inner">
+    <div class="dom-panel-head">
+      <h2>Document Object Model — page structure</h2>
+      <button class="dom-close" id="domClose" type="button" aria-label="Close">&times;</button>
+    </div>
+    <p class="dom-panel-note">Generated live by walking <code>document.body</code> in JavaScript — it reflects this page's real DOM, not a static diagram.</p>
+    <pre class="dom-tree" id="domTree"></pre>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/showcase.js"></script>
+</body>
+</html>
